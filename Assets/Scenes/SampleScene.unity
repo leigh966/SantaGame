@@ -152,6 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rudolf: {fileID: 1153222941}
+  presentPrefab: {fileID: 1017581384310113803, guid: 02f40909ceabaf04fb6ee71d3408bd49, type: 3}
+  sleigh: {fileID: 1251923698}
 --- !u!4 &394393401
 Transform:
   m_ObjectHideFlags: 0
