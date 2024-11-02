@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PresentBehaviour : MonoBehaviour
 {
+    public float leftwardForce;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,6 @@ public class PresentBehaviour : MonoBehaviour
 
     private void FixedUpdate()
     {
-        GetComponent<Rigidbody2D>().AddForce(Vector2.left);
+        GetComponent<Rigidbody2D>().AddForce(Vector2.left*leftwardForce);
     }
 }
