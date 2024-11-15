@@ -7,12 +7,20 @@ public class SantaMovement : MonoBehaviour
     public Transform rudolf;
     public GameObject presentPrefab;
     public Transform sleigh;
+    public ScrollSpeedCopier ssc;
 
 
     // Start is called before the first frame update
     void Start()
     {
         
+    }
+
+    void DropPresent()
+    {
+        GameObject newPres = Instantiate(presentPrefab);
+        newPres.transform.position = sleigh.position;
+        ssc.destinations.Add(newPres.GetComponent<PresentBehaviour>());
     }
 
     // Update is called once per frame
@@ -23,8 +31,7 @@ public class SantaMovement : MonoBehaviour
         transform.position = new Vector3(mouseWorldPos.x, transform.position.y, 0f);
         if(Input.GetMouseButtonDown(0))
         {
-            GameObject newPres = Instantiate(presentPrefab);
-            newPres.transform.position = sleigh.position;
+            DropPresent();
         }
     }
 }
