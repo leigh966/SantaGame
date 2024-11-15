@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class PresentDestroyerBehaviour : MonoBehaviour
+[RequireComponent(typeof(Rigidbody2D))]
+public class DestroyerBehaviour : MonoBehaviour
 {
     public LayerMask mask;
 
@@ -18,10 +18,16 @@ public class PresentDestroyerBehaviour : MonoBehaviour
         
     }
 
+    virtual protected void BeforeDestroyingObject()
+    {
+
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if ((mask & (1 << collision.gameObject.layer)) != 0)
         {
+            BeforeDestroyingObject();
             Destroy(collision.gameObject);
         }
     }
