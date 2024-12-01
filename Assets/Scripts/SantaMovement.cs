@@ -7,7 +7,6 @@ public class SantaMovement : MonoBehaviour
     public Transform rudolf;
     public List<GameObject> presentPrefabs;
     public Transform sleigh;
-    public ScrollSpeedCopier ssc;
 
 
     // Start is called before the first frame update
@@ -27,7 +26,6 @@ public class SantaMovement : MonoBehaviour
     {
         GameObject newPres = Instantiate(ChooseRandomPresent());
         newPres.transform.position = sleigh.position;
-        ssc.destinations.Add(newPres.GetComponent<PresentBehaviour>());
     }
 
     // Update is called once per frame
