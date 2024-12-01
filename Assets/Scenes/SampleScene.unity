@@ -5207,8 +5207,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rudolf: {fileID: 1153222941}
   presentPrefabs:
-  - {fileID: 1017581384310113803, guid: 02f40909ceabaf04fb6ee71d3408bd49, type: 3}
   - {fileID: 8408953208764474492, guid: 35bccec022cf42340b97a96b2fae9dd0, type: 3}
+  - {fileID: 5494168898003576561, guid: b5b52fdb6eb0bd8499ac9474864b4151, type: 3}
   sleigh: {fileID: 1251923698}
   ssc: {fileID: 611202535}
 --- !u!4 &394393401
