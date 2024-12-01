@@ -5206,7 +5206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rudolf: {fileID: 1153222941}
-  presentPrefab: {fileID: 1017581384310113803, guid: 02f40909ceabaf04fb6ee71d3408bd49, type: 3}
+  presentPrefab: {fileID: 8408953208764474492, guid: 35bccec022cf42340b97a96b2fae9dd0, type: 3}
   sleigh: {fileID: 1251923698}
   ssc: {fileID: 611202535}
 --- !u!4 &394393401
