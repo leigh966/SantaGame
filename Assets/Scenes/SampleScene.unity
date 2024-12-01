@@ -5358,7 +5358,7 @@ PrefabInstance:
     - target: {fileID: 4977491936004078540, guid: 78f73560b1cdcac4994b7d1e288d7530, type: 3}
       propertyPath: scorer
       value: 
-      objectReference: {fileID: 1303133710}
+      objectReference: {fileID: 1303133712}
     - target: {fileID: 5432614487090202201, guid: 78f73560b1cdcac4994b7d1e288d7530, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -6044,7 +6044,7 @@ PrefabInstance:
     - target: {fileID: 4977491936004078540, guid: 78f73560b1cdcac4994b7d1e288d7530, type: 3}
       propertyPath: scorer
       value: 
-      objectReference: {fileID: 1303133710}
+      objectReference: {fileID: 1303133712}
     - target: {fileID: 5432614487090202201, guid: 78f73560b1cdcac4994b7d1e288d7530, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -6372,7 +6372,7 @@ PrefabInstance:
     - target: {fileID: 4977491936004078540, guid: 78f73560b1cdcac4994b7d1e288d7530, type: 3}
       propertyPath: scorer
       value: 
-      objectReference: {fileID: 1303133710}
+      objectReference: {fileID: 1303133712}
     - target: {fileID: 5432614487090202201, guid: 78f73560b1cdcac4994b7d1e288d7530, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -6589,7 +6589,7 @@ PrefabInstance:
     - target: {fileID: 4977491936004078540, guid: 78f73560b1cdcac4994b7d1e288d7530, type: 3}
       propertyPath: scorer
       value: 
-      objectReference: {fileID: 1303133710}
+      objectReference: {fileID: 1303133712}
     - target: {fileID: 5432614487090202201, guid: 78f73560b1cdcac4994b7d1e288d7530, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -6612,7 +6612,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1303133711}
-  - component: {fileID: 1303133710}
+  - component: {fileID: 1303133712}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -6620,19 +6620,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1303133710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1303133709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3499d0ed20d18814097b4a774513e716, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outputText: {fileID: 734071607}
 --- !u!4 &1303133711
 Transform:
   m_ObjectHideFlags: 0
@@ -6648,6 +6635,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1303133712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303133709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7451d6b859ea0543a01a5353b2ff6a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outputText: {fileID: 734071607}
+  santa: {fileID: 1251923702}
 --- !u!1001 &1430314652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6711,7 +6712,7 @@ PrefabInstance:
     - target: {fileID: 4977491936004078540, guid: 78f73560b1cdcac4994b7d1e288d7530, type: 3}
       propertyPath: scorer
       value: 
-      objectReference: {fileID: 1303133710}
+      objectReference: {fileID: 1303133712}
     - target: {fileID: 5432614487090202201, guid: 78f73560b1cdcac4994b7d1e288d7530, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -7180,7 +7181,7 @@ PrefabInstance:
     - target: {fileID: 4977491936004078540, guid: 78f73560b1cdcac4994b7d1e288d7530, type: 3}
       propertyPath: scorer
       value: 
-      objectReference: {fileID: 1303133710}
+      objectReference: {fileID: 1303133712}
     - target: {fileID: 5432614487090202201, guid: 78f73560b1cdcac4994b7d1e288d7530, type: 3}
       propertyPath: m_Layer
       value: 0

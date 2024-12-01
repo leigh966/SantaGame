@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScoreSystem : MonoBehaviour
 {
-    private int score;
+    protected int score;
     public TMPro.TextMeshProUGUI outputText;
 
     // Start is called before the first frame update
@@ -22,7 +22,7 @@ public class ScoreSystem : MonoBehaviour
         }
     }
 
-    public void IncrementScore()
+    public virtual void IncrementScore()
     {
         score++;
     }
