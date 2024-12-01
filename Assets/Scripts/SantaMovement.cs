@@ -5,7 +5,7 @@ using UnityEngine;
 public class SantaMovement : MonoBehaviour
 {
     public Transform rudolf;
-    public GameObject presentPrefab;
+    public List<GameObject> presentPrefabs;
     public Transform sleigh;
     public ScrollSpeedCopier ssc;
 
@@ -16,9 +16,16 @@ public class SantaMovement : MonoBehaviour
         
     }
 
+    private GameObject ChooseRandomPresent()
+    {
+        int index = Random.Range(0, presentPrefabs.Count);
+        return presentPrefabs[index];
+    }
+
+
     void DropPresent()
     {
-        GameObject newPres = Instantiate(presentPrefab);
+        GameObject newPres = Instantiate(ChooseRandomPresent());
         newPres.transform.position = sleigh.position;
         ssc.destinations.Add(newPres.GetComponent<PresentBehaviour>());
     }
