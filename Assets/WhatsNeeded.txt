@@ -1,0 +1,15 @@
+textures:
+	- house
+	- background
+
+entities:
+	- enemies/obstacles
+		- birds?
+		- clouds
+
+mechanics:
+	- up/down cam movement
+	- present randomized rotation
+
+fixes:
+	- house spawn/despawn
