@@ -7,7 +7,7 @@ entities:
 		- birds?
 		- clouds
 			- cloud generator particle system - DONE
-			- cloud generator controller
+			- cloud generator controller - DONE
 			- filter for when player is in a cloud
 
 mechanics:
@@ -21,3 +21,4 @@ fixes:
 		- height change when camera moves up - DONE
 		- overlapping
 		- cloud to top layer
+		- snow generating below the camera if the camera moves up
