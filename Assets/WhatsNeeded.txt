@@ -2,6 +2,10 @@ textures:
 	- house
 	- background
 
+sounds
+	- score (present goes in chminey)
+	- background music
+
 entities:
 	- enemies/obstacles
 		- birds?
