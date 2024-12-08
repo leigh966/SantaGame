@@ -21,4 +21,4 @@ fixes:
 		- height change when camera moves up - DONE
 		- overlapping
 		- cloud to top layer
-		- snow generating below the camera if the camera moves up
+		- snow generating below the camera if the camera moves up - DONE
