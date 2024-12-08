@@ -12,7 +12,7 @@ entities:
 		- clouds
 			- cloud generator particle system - DONE
 			- cloud generator controller - DONE
-			- filter for when player is in a cloud
+			- filter for when player is in a cloud - DONE
 
 mechanics:
 	- up/down cam movement
@@ -23,6 +23,7 @@ mechanics:
 fixes:
 	- house spawn/despawn
 		- height change when camera moves up - DONE
-		- overlapping
-		- cloud to top layer
+		- house overlapping
+		- cloud to top layer - DONE
 		- snow generating below the camera if the camera moves up - DONE
+		- loose cloud particles straying from cloud
