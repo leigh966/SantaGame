@@ -10,7 +10,7 @@ entities:
 mechanics:
 	- up/down cam movement
 		- up - DONE
-		- down
+		- down - DONE
 	- present randomized rotation
 
 fixes:
