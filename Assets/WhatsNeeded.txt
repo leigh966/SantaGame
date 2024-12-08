@@ -6,6 +6,9 @@ entities:
 	- enemies/obstacles
 		- birds?
 		- clouds
+			- cloud generator particle system - DONE
+			- cloud generator controller
+			- filter for when player is in a cloud
 
 mechanics:
 	- up/down cam movement
@@ -17,3 +20,4 @@ fixes:
 	- house spawn/despawn
 		- height change when camera moves up - DONE
 		- overlapping
+		- cloud to top layer
