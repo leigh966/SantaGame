@@ -9,7 +9,11 @@ entities:
 
 mechanics:
 	- up/down cam movement
+		- up - DONE
+		- down
 	- present randomized rotation
 
 fixes:
 	- house spawn/despawn
+		- height change when camera moves up - DONE
+		- overlapping

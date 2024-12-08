@@ -7079,6 +7079,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1797166104}
+  - component: {fileID: 1797166105}
   m_Layer: 0
   m_Name: HouseSpawner
   m_TagString: Untagged
@@ -7103,6 +7104,21 @@ Transform:
   - {fileID: 969655015}
   m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1797166105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797166103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07235e17acabe943956b50e397b6515, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockX: 0
+  lockY: 1
+  lockZ: 0
 --- !u!4 &1829755698 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8756315060406614599, guid: 8b3bc27ea84d01a4b8a0c621cb4f725a, type: 3}
