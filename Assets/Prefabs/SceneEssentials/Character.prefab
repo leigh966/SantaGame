@@ -350,6 +350,7 @@ MonoBehaviour:
   - {fileID: 8408953208764474492, guid: 35bccec022cf42340b97a96b2fae9dd0, type: 3}
   - {fileID: 5494168898003576561, guid: b5b52fdb6eb0bd8499ac9474864b4151, type: 3}
   sleigh: {fileID: 5022560630022081808}
+  parcelCooldown: 0.3
 --- !u!1 &7816251001242144446
 GameObject:
   m_ObjectHideFlags: 0

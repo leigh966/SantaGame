@@ -22,7 +22,7 @@ mechanics:
 		- down - DONE
 	- present randomized rotation
 	- add fade in to cloud effect
-	- parcel drop cooldown
+	- parcel drop cooldown - DONE
 
 fixes:
 	- house spawn/despawn
