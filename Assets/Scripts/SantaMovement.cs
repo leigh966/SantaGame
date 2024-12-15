@@ -44,10 +44,16 @@ public class SantaMovement : MonoBehaviour
         Invoke("EnableDrop", parcelCooldown);
     }
 
+    Vector3 GetMousePosition()
+    {
+        return new Vector3(Mathf.Clamp(Input.mousePosition.x, 0f, Screen.width), Mathf.Clamp(Input.mousePosition.y, 0f, Screen.height), Input.mousePosition.z);
+    }
+
+
     // Update is called once per frame
     void Update()
     {
-        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition, Camera.MonoOrStereoscopicEye.Mono);
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(GetMousePosition(), Camera.MonoOrStereoscopicEye.Mono);
         rudolf.position = new Vector3(rudolf.position.x, mouseWorldPos.y+Mathf.Sin(Time.realtimeSinceStartup*2)/2f, rudolf.position.z);
         transform.position = new Vector3(mouseWorldPos.x, transform.position.y, 0f);
         if(canDrop && Input.GetMouseButtonDown(0))
