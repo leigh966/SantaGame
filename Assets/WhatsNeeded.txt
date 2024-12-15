@@ -23,6 +23,7 @@ mechanics:
 	- present randomized rotation - DONE
 	- add fade in to cloud effect - DONE
 	- parcel drop cooldown - DONE
+	- terrain variation
 
 fixes:
 	- house spawn/despawn
@@ -31,7 +32,7 @@ fixes:
 		- cloud to top layer - DONE
 		- snow generating below the camera if the camera moves up - DONE
 		- loose cloud particles straying from cloud
-		- character going offscreen
+		- character going offscreen - DONE
 
 scenes:
 	- main menu
