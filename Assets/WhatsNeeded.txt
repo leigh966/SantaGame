@@ -5,6 +5,8 @@ textures:
 sounds
 	- score (present goes in chminey)
 	- background music
+		- main menu - DONE
+		- game modes
 
 entities:
 	- enemies/obstacles
@@ -19,6 +21,8 @@ mechanics:
 		- up - DONE
 		- down - DONE
 	- present randomized rotation
+	- add fade in to cloud effect
+	- parcel drop cooldown
 
 fixes:
 	- house spawn/despawn
@@ -27,3 +31,15 @@ fixes:
 		- cloud to top layer - DONE
 		- snow generating below the camera if the camera moves up - DONE
 		- loose cloud particles straying from cloud
+		- character going offscreen
+
+scenes:
+	- main menu
+		- basic example - DONE
+		- full version - BLOCKED (NEED TO GET BASIC BUILDS FOR GAME MODES DONE)
+	- timed
+		- timer
+	- marathon
+		- enemies/obstacles
+	- sudden death
+		- lose when you miss one
