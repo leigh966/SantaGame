@@ -10,8 +10,8 @@ public class CloudGeneratorBehaviour : MonoBehaviour
     public SpriteRenderer filter;
 
     private ParticleSystem generator;
-    public float filterMaxTtl, filterMaxOpacity;
-    private float filterTtl = 0;
+    public float filterFadeTime, filterMaxOpacity, filterOpacityStep;
+    float filterOpacity;
 
 
     void QueueNextCloud()
@@ -43,17 +43,22 @@ public class CloudGeneratorBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        filterTtl -= Time.deltaTime;
         var col = filter.material.color;
-        col.a = filterTtl / filterMaxTtl * filterMaxOpacity;
+        col.a = filterOpacity;
         filter.material.color = col;
+    }
+
+    void StepDownFilterOpacity()
+    {
+        filterOpacity -= filterOpacityStep;
     }
 
     private void OnParticleCollision(GameObject other)
     {
-        if (other.layer == 7)
+        if (filterOpacity < filterMaxOpacity && other.layer == 7)
         {
-            filterTtl = filterMaxTtl;
+            filterOpacity += filterOpacityStep;
+            Invoke("StepDownFilterOpacity", filterFadeTime);
         }
     }
 

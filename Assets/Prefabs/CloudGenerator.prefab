@@ -4852,5 +4852,6 @@ MonoBehaviour:
   minTimeBetween: 3
   maxTimeBetween: 5
   filter: {fileID: 0}
-  filterMaxTtl: 2
-  filterMaxOpacity: 0.5
+  filterFadeTime: 2
+  filterMaxOpacity: 0.7
+  filterOpacityStep: 0.0005
