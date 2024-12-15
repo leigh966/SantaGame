@@ -21,7 +21,7 @@ mechanics:
 		- up - DONE
 		- down - DONE
 	- present randomized rotation - DONE
-	- add fade in to cloud effect
+	- add fade in to cloud effect - DONE
 	- parcel drop cooldown - DONE
 
 fixes:
