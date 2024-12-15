@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class SantaMovement : MonoBehaviour
@@ -29,10 +30,16 @@ public class SantaMovement : MonoBehaviour
         canDrop = true;
     }
 
+    private float RandomAngle()
+    {
+        return Random.Range(0f, 360f);
+    }
+
     void DropPresent()
     {
         GameObject newPres = Instantiate(ChooseRandomPresent());
         newPres.transform.position = sleigh.position;
+        newPres.transform.eulerAngles = new Vector3(0f,0f,RandomAngle());
         canDrop = false;
         Invoke("EnableDrop", parcelCooldown);
     }

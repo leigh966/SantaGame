@@ -20,7 +20,7 @@ mechanics:
 	- up/down cam movement
 		- up - DONE
 		- down - DONE
-	- present randomized rotation
+	- present randomized rotation - DONE
 	- add fade in to cloud effect
 	- parcel drop cooldown - DONE
 
