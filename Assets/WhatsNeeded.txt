@@ -38,9 +38,15 @@ scenes:
 	- main menu
 		- basic example - DONE
 		- full version - BLOCKED (NEED TO GET BASIC BUILDS FOR GAME MODES DONE)
-	- timed
-		- timer
+		- reactive buttons
+		- background
+		- animations
+		- pop-up explanation for game modes
+	- timed (Santa's Countdown)
+		- timer - DONE
+		- make end menu
 	- marathon
-		- enemies/obstacles
-	- sudden death
+		- enemies/obstacles?
+		- no speed changing
+	- sudden death (Perfect Delivery)
 		- lose when you miss one
