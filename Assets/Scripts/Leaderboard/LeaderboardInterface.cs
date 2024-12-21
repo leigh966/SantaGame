@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using System.Transactions;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public abstract class LeaderboardInterface
 {
@@ -21,7 +23,7 @@ public abstract class LeaderboardInterface
         return hash.ToString();
     }
 
-    public abstract List<LeaderboardEntry> Get();
+    public abstract IEnumerator Get(Func<UnityWebRequest, bool> callback);
     public abstract IEnumerator Post();
 
 }

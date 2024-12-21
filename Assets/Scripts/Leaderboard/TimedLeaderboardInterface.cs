@@ -4,13 +4,28 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class TimedLeaderboardInterface : LeaderboardInterface
 {
 
-    public override List<LeaderboardEntry> Get()
+
+    public override IEnumerator Get(Func<UnityWebRequest, bool> callback)
     {
-        throw new System.NotImplementedException();
+        using (UnityWebRequest www = UnityWebRequest.Get(host + "/timed"))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+                //spawner.Create(400, 400, "Failed to connect to the servers. Please try again later.");
+            }
+            else
+            {
+                callback(www);
+            }
+        }
     }
 
 
