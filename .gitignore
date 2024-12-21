@@ -73,3 +73,4 @@ crashlytics-build.properties
 
 
 /[Aa]ssets/CannotShare
+/[Aa]ssets/Scripts/LeaderboardInterface.cs
