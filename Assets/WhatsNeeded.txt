@@ -24,6 +24,7 @@ mechanics:
 	- add fade in to cloud effect - DONE
 	- parcel drop cooldown - DONE
 	- terrain variation
+	- visual feedback that you're in a speed bound
 
 fixes:
 	- house spawn/despawn
@@ -33,6 +34,7 @@ fixes:
 		- snow generating below the camera if the camera moves up - DONE
 		- loose cloud particles straying from cloud
 		- character going offscreen - DONE
+		- speed bounds too easy to accidentally trigger
 
 scenes:
 	- main menu

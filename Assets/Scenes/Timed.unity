@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 840af368f2456d145a301d00ea8e6751, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameLengthInSeconds: 180
+  gameLengthInSeconds: 5
   autoScroll: {fileID: 6544021673473215969}
   movementScript: {fileID: 6436809149106208055}
   gameOverMenu: {fileID: 2710591818448299860}
@@ -256,6 +256,10 @@ PrefabInstance:
       propertyPath: santa
       value: 
       objectReference: {fileID: 1251923702}
+    - target: {fileID: 5608704630350280017, guid: 92c2e4131fbff87499a1cd21677f489e, type: 3}
+      propertyPath: PrefToSet
+      value: timedScore
+      objectReference: {fileID: 0}
     - target: {fileID: 5608704630350280017, guid: 92c2e4131fbff87499a1cd21677f489e, type: 3}
       propertyPath: outputText
       value: 

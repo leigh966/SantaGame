@@ -36,10 +36,6 @@ public class CamMoveBoundBehaviour : MonoBehaviour
         if(collision.collider==toDetect)
         {
             Vector3 delta = new Vector3(shouldMove(camTransform.position.x, minX, minOrMaxX) ? movement.x : 0f, shouldMove(camTransform.position.y, minY, minOrMaxY) ? movement.y : 0f, 0f);
-            Debug.LogWarning("new");
-            Debug.Log(camTransform.position.y);
-            Debug.Log(minY);
-            Debug.Log(minOrMaxY);
             camTransform.position = camTransform.position + delta*Time.deltaTime;
         }
     }

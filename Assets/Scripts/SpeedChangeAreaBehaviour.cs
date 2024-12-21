@@ -35,7 +35,6 @@ public class SpeedChangeAreaBehaviour : MonoBehaviour
     {
         if (CollidingWithTargets(collision.gameObject.layer))
         {
-            Debug.Log(colliding);
             colliding++;
         }
     }
