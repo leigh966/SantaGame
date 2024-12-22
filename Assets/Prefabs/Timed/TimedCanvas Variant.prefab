@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -210, y: -60}
+  m_AnchoredPosition: {x: -110, y: -60}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7888738914767924105
@@ -99,8 +99,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 4
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -252,6 +252,62 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 686158704960745867}
     m_Modifications:
+    - target: {fileID: 627269282943444612, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 627269282943444612, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 627269282943444612, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5343427245414953732}
+    - target: {fileID: 627269282943444612, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 627269282943444612, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 627269282943444612, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 627269282943444612, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049726933961544043, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049726933961544043, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049726933961544043, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6186423206751146902}
+    - target: {fileID: 4049726933961544043, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049726933961544043, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049726933961544043, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049726933961544043, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4322418415248733926, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
       propertyPath: m_Name
       value: TimedGameOver
@@ -375,8 +431,50 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6500631114940018956, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5343427245414953732}
+    - targetCorrespondingSourceObject: {fileID: 6413777745247115900, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6186423206751146902}
   m_SourcePrefab: {fileID: 100100000, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+--- !u!1 &4064772692360091962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6500631114940018956, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+  m_PrefabInstance: {fileID: 7088130028676655158}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5343427245414953732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4064772692360091962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bf495052a31a5043aa89b19a5413929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: MainMenu
+--- !u!1 &4277373272998261322 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6413777745247115900, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
+  m_PrefabInstance: {fileID: 7088130028676655158}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6186423206751146902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4277373272998261322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bf495052a31a5043aa89b19a5413929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Timed
 --- !u!224 &4370659307020079180 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6843690015455901818, guid: ece22a8a381459c4a94a1acd6ba02ad5, type: 3}
