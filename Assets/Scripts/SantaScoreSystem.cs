@@ -8,6 +8,12 @@ public class SantaScoreSystem : ScoreSystem
 
     public string PrefToSet;
 
+    protected override void Start()
+    {
+        base.Start();
+        PlayerPrefs.SetInt(PrefToSet, score);
+    }
+
     public override void IncrementScore()
     {
         base.IncrementScore();

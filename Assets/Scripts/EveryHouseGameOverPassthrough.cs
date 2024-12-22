@@ -9,7 +9,7 @@ using System.Threading.Tasks;
     {
     public override void EndGame()
     {
-        //game.EndGame(new EveryHouseLeaderboardInterface());
+        game.EndGame(new EveryHouseLeaderboardInterface());
     }
 }
 

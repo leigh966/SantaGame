@@ -20,13 +20,18 @@ public class GameBehaviour : MonoBehaviour
         done = true;
     }
 
-    public void DisplayTime(float timeInSeconds)
+    public string ToDisplayableTime(float timeInSeconds)
     {
         string secondsString = ((int)(timeInSeconds % 60f)).ToString();
         if (secondsString.Length < 2)
         {
             secondsString = "0" + secondsString;
         }
-        timerOutput.text = ((int)(timeInSeconds / 60f)).ToString() + ":" + secondsString;
+        return ((int)(timeInSeconds / 60f)).ToString() + ":" + secondsString; ;
+    }
+
+    public void DisplayTime(float timeInSeconds)
+    {
+        timerOutput.text = ToDisplayableTime(timeInSeconds);
     }
 }
