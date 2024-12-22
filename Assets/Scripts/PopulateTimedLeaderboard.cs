@@ -8,10 +8,14 @@ public class PopulateTimedLeaderboard : MonoBehaviour
 {
     public GameObject leaderboardEntryPrefab;
     public Transform tableContent;
+    public RectTransform scrollView;
+    public float rowHeight;
 
     bool GenerateRows(UnityWebRequest www)
     {
+        
         var leaderboard = JsonUtility.FromJson<TimedLeaderboard>(www.downloadHandler.text);
+        scrollView.sizeDelta = new Vector2(0, rowHeight * (leaderboard.entries.Count + 1));
         for (int i = 0; i < leaderboard.entries.Count; i++)
         {
             var entry = leaderboard.entries[i];
