@@ -4,21 +4,10 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class TimedLeaderboardEntryBehaviour : MonoBehaviour
+public class TimedLeaderboardEntryBehaviour : LeaderboardEntryBehaviour
 {
-    public TextMeshProUGUI nameText;
     public TextMeshProUGUI scoreText;
 
-    public string Name
-    {
-        get
-        {
-            return nameText.text;
-        }
-        set { 
-            nameText.text = value;
-        }
-    }
 
     public string Score
     {

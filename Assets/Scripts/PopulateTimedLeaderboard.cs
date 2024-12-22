@@ -17,6 +17,7 @@ public class PopulateTimedLeaderboard : MonoBehaviour
             var entry = leaderboard.entries[i];
             var row = Instantiate(leaderboardEntryPrefab, tableContent);
             var rowBehaviour = row.GetComponent<TimedLeaderboardEntryBehaviour>();
+            rowBehaviour.Pos = (i + 1).ToString();
             rowBehaviour.Name = entry.name;
             rowBehaviour.Score = entry.score;
         }
