@@ -15,7 +15,7 @@ public class EveryHouseGameBehaviour : GameBehaviour
     public override void EndGame(LeaderboardInterface lbInterface)
     {
         base.EndGame(lbInterface);
-        PlayerPrefs.
+        PlayerPrefs.SetFloat("everyHouseTime", currentTime);
     }
 
     // Update is called once per frame
