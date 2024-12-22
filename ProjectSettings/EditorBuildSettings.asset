@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Timed.unity
     guid: afdabe3d93c4e344a9286a60e9d76778
+  - enabled: 1
+    path: Assets/Scenes/EveryHouse.unity
+    guid: 0ca7e47aeef278542b2339b4decd2312
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
