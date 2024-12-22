@@ -172,6 +172,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6190722809843257710, guid: 341fb6c1d506c8c42b713e50a583cfc6, type: 3}
+      propertyPath: m_Volume
+      value: 0.326
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190722809843257710, guid: 341fb6c1d506c8c42b713e50a583cfc6, type: 3}
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 10a08534a93328249b42ae552cd60041, type: 3}
@@ -223,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 840af368f2456d145a301d00ea8e6751, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameLengthInSeconds: 5
+  gameLengthInSeconds: 180
   autoScroll: {fileID: 6544021673473215969}
   movementScript: {fileID: 6436809149106208055}
   gameOverMenu: {fileID: 2710591818448299860}
@@ -311,6 +315,10 @@ PrefabInstance:
     - target: {fileID: 5994076032485897275, guid: 341fb6c1d506c8c42b713e50a583cfc6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190722809843257710, guid: 341fb6c1d506c8c42b713e50a583cfc6, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6190722809843257710, guid: 341fb6c1d506c8c42b713e50a583cfc6, type: 3}
       propertyPath: m_Resource
@@ -703,6 +711,14 @@ PrefabInstance:
     - target: {fileID: 4334615435341010092, guid: 8514c3cc88c271e43b0fdc973987c2a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686095731120497358, guid: 8514c3cc88c271e43b0fdc973987c2a1, type: 3}
+      propertyPath: Priority
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716895241453173098, guid: 8514c3cc88c271e43b0fdc973987c2a1, type: 3}
+      propertyPath: windCooldown
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8346301600103888071, guid: 8514c3cc88c271e43b0fdc973987c2a1, type: 3}
       propertyPath: toDetect

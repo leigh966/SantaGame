@@ -12,7 +12,8 @@ public class CloudGeneratorBehaviour : MonoBehaviour
     private ParticleSystem generator;
     public float filterFadeTime, filterMaxOpacity, filterOpacityStep;
     float filterOpacity;
-
+    public float windCooldown;
+    float windCoolCounter = 0f;
 
     void QueueNextCloud()
     {
@@ -46,6 +47,7 @@ public class CloudGeneratorBehaviour : MonoBehaviour
         var col = filter.material.color;
         col.a = filterOpacity;
         filter.material.color = col;
+        windCoolCounter -= Time.deltaTime;
     }
 
     void StepDownFilterOpacity()
@@ -59,6 +61,11 @@ public class CloudGeneratorBehaviour : MonoBehaviour
         {
             filterOpacity += filterOpacityStep;
             Invoke("StepDownFilterOpacity", filterFadeTime);
+            if (windCoolCounter < 0f)
+            {
+                GetComponent<AudioSource>().Play();
+                windCoolCounter = windCooldown;
+            }
         }
     }
 
