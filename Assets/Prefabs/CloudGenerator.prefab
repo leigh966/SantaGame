@@ -4849,13 +4849,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minHeight: 1
-  maxHeight: 2
+  maxHeight: 6
   minTimeBetween: 3
-  maxTimeBetween: 5
+  maxTimeBetween: 10
   filter: {fileID: 0}
   filterFadeTime: 2
   filterMaxOpacity: 0.7
   filterOpacityStep: 0.0005
+  windCooldown: 0
 --- !u!82 &7651561682444123286
 AudioSource:
   m_ObjectHideFlags: 0
