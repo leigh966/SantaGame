@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EveryHouse.unity
     guid: 0ca7e47aeef278542b2339b4decd2312
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 34ea5f401858e6e41841a13bd4495eec
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
