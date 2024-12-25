@@ -22,7 +22,7 @@ public class RespawnOnTouchBehaviour : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if ((layersToApply & (1 << collision.gameObject.layer)) != 0)
+        if (LayerTools.LayerInMask(collision.gameObject.layer, layersToApply))
         {
             collision.transform.position = spawnPoint.position;
         }
