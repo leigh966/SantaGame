@@ -697,8 +697,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4716895241453173098, guid: 8514c3cc88c271e43b0fdc973987c2a1, type: 3}
+      propertyPath: maxHeight
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716895241453173098, guid: 8514c3cc88c271e43b0fdc973987c2a1, type: 3}
       propertyPath: windCooldown
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716895241453173098, guid: 8514c3cc88c271e43b0fdc973987c2a1, type: 3}
+      propertyPath: maxTimeBetween
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5348492080008190982, guid: 8514c3cc88c271e43b0fdc973987c2a1, type: 3}
       propertyPath: m_LocalPosition.y
