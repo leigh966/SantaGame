@@ -1,3 +1,9 @@
 Leigh Hurley - Developer
-?? - Santa, Sleigh & Reindeer
-?? - music pack
+
+artwork:
+Robert Brooks (Game Developer Studio) - Santa, Sleigh, Reindeer & Winter Night Background
+Pucci Games - Backgrounds & Effects
+
+sounds:
+elvgames - Christmas Music Volume 1
+Leigh Hurley - Mouth Noises
