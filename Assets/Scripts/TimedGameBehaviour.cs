@@ -10,12 +10,14 @@ public class TimedGameBehaviour : GameBehaviour
 {
     public float gameLengthInSeconds;
     private float currentTime;
-
+    public TMPro.TextMeshProUGUI gameOverScoreOutput;
+    private SantaScoreSystem scoreSystem;
 
     // Start is called before the first frame update
     void Start()
     {
         currentTime = gameLengthInSeconds;
+        scoreSystem = GetComponent<SantaScoreSystem>();
     }
 
     // Update is called once per frame
@@ -31,6 +33,7 @@ public class TimedGameBehaviour : GameBehaviour
             EndGame(new TimedLeaderboardInterface());
             return;
         }
+        gameOverScoreOutput.text = "Your Score: "+scoreSystem.Score.ToString();
         DisplayTime(currentTime);
     }
 }

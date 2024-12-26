@@ -8,6 +8,14 @@ public class SantaScoreSystem : ScoreSystem
 
     public string PrefToSet;
 
+    public int Score
+    {
+        get
+        {
+            return score;
+        }
+    }
+
     protected override void Start()
     {
         base.Start();
