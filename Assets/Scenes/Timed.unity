@@ -164,6 +164,7 @@ MonoBehaviour:
   scoreSystem: {fileID: 750220799}
   timerOutput: {fileID: 689867612}
   gameLengthInSeconds: 180
+  gameOverScoreOutput: {fileID: 968912477}
 --- !u!114 &750220799 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5608704630350280017, guid: 92c2e4131fbff87499a1cd21677f489e, type: 3}
@@ -173,6 +174,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b7451d6b859ea0543a01a5353b2ff6a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &968912477 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1720864313164489095, guid: bc84e8b3554bf2d42a39e5ea77364792, type: 3}
+  m_PrefabInstance: {fileID: 4358472964828180207}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!58 &1153222943 stripped
