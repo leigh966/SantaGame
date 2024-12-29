@@ -22,7 +22,7 @@ public class EveryHouseHouseRespawnerBehaviour : RespawnOnTouchBehaviour
     {
         base.BeforeHouseRespawn(collision);
         var chimney = collision.gameObject.GetComponentInChildren<EveryHouseChimneyBehaviour>();
-        if (!chimney.HasScored) gameBehaviour.EndGame();
+        if (!chimney.HasScored) gameBehaviour.MissHouse();
         chimney.HouseReset();
         
     }
