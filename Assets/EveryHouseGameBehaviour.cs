@@ -19,6 +19,11 @@ public class EveryHouseGameBehaviour : GameBehaviour
         
     }
 
+    public void EndGame()
+    {
+        EndGame(new EveryHouseLeaderboardInterface());
+    }
+
     // Update is called once per frame
     void Update()
     {

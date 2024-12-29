@@ -20,10 +20,16 @@ public class RespawnOnTouchBehaviour : MonoBehaviour
         
     }
 
+    public virtual void BeforeHouseRespawn(Collision2D collision)
+    {
+
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (LayerTools.LayerInMask(collision.gameObject.layer, layersToApply))
         {
+            BeforeHouseRespawn(collision);
             collision.transform.position = spawnPoint.position;
         }
     }
