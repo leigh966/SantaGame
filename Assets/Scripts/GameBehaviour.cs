@@ -10,15 +10,25 @@ public class GameBehaviour : MonoBehaviour
     public TMPro.TextMeshProUGUI timerOutput;
 
     protected bool done;
+
+    private void Start()
+    {
+       
+    }
+
     public virtual void EndGame(LeaderboardInterface lbInterface)
     {
         scoreSystem.enabled = false;
         autoScroll.enabled = false;
         movementScript.enabled = false;
         gameOverMenu.SetActive(true);
+        var gameOverMenuBehaviour = gameOverMenu.GetComponent<GameOverMenuBehaviour>();
+        gameOverMenuBehaviour.Score = scoreSystem.GetScore();
         StartCoroutine(lbInterface.Post());
         done = true;
+        
     }
+
 
     public string ToDisplayableTime(float timeInSeconds)
     {

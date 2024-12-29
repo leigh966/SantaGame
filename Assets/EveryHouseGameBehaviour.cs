@@ -15,6 +15,7 @@ public class EveryHouseGameBehaviour : GameBehaviour
     public override void EndGame(LeaderboardInterface lbInterface)
     {
         PlayerPrefs.SetString("everyHouseTime", ToDisplayableTime(currentTime));
+        gameOverMenu.GetComponent<GameOverMenuBehaviour>().Heading = "You Missed A House!";
         base.EndGame(lbInterface);
         
     }
