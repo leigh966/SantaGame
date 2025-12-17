@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8133568623103558516}
   m_Layer: 0
   m_Name: Background Wind
-  m_TagString: Untagged
+  m_TagString: BackgroundMusic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,7 +43,6 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 10a08534a93328249b42ae552cd60041, type: 3}
-  m_Resource: {fileID: 8300000, guid: 10a08534a93328249b42ae552cd60041, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.326
   m_Pitch: 1

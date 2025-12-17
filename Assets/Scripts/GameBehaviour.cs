@@ -18,6 +18,15 @@ public class GameBehaviour : MonoBehaviour
 
     public virtual void EndGame(LeaderboardInterface lbInterface)
     {
+        var music = GameObject.FindGameObjectWithTag("BackgroundMusic");
+        if (music != null)
+        {
+            music.GetComponent<AudioSource>().pitch = 0.85f;
+        }
+        else
+        {
+            Debug.LogError("No background music found");
+        }
         scoreSystem.enabled = false;
         autoScroll.enabled = false;
         movementScript.enabled = false;
